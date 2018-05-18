@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="APIExperiment.Views.LevelsView">
+
+
+    <StackLayout Padding="40,50,40,50" BackgroundColor="White">
+        <Frame HasShadow="false" OutlineColor="Orange" VerticalOptions="FillAndExpand">
+    <StackLayout Spacing="20" VerticalOptions="FillAndExpand" HorizontalOptions="Center" BackgroundColor="white">
+        <Label Text="Choose What Level Will You Play Today?" 
+               VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"/>
+        <Picker Title="Levels"
+                ItemsSource="{Binding lstLevels}"
+                ItemDisplayBinding="{Binding ID}"
+                SelectedItem="{Binding CurrentLevel}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="StartAndExpand"/>
+
+       <Button Text="Play!" BackgroundColor="Orange" HorizontalOptions="FillAndExpand" Command="{Binding TakeToTriviaQuestionCommand}" />
+    </StackLayout>
+            </Frame>
+    </StackLayout>
+
+</ContentPage>

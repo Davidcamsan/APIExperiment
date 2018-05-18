@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="APIExperiment.Views.LogInView">
+    
+       <AbsoluteLayout BackgroundColor="White">
+        <!--****PAINTING BANNER -->
+        <Image Source="Zombie" 
+               AbsoluteLayout.LayoutBounds="0,0" 
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <!--*****PAINTING'S ARTIST AND WORK'S TITLE -->
+        <StackLayout AbsoluteLayout.LayoutBounds="0,.26"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" 
+                     Spacing="0" 
+                     Padding="2,0,0,0">
+            <Label Text="Artist Name Here" 
+                   FontSize="Small" FontFamily="Lato" BackgroundColor="White" TextColor="Black" />
+            <Label Text="ArtWork's Name Here" 
+                   FontSize="Small" FontFamily="Lato" BackgroundColor="White" TextColor="Black" FontAttributes="Italic" />
+        </StackLayout>
+        <!--*** END OF PAINTING'S ARTIST AND TITLE -->
+
+        
+        <!-- ***** START OF DETAIL AND APP'S NAME *****-->
+             <!--DETAIL-->
+        <Button BorderRadius="100" BorderWidth="0"
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                BackgroundColor="#FFC82C">
+            <AbsoluteLayout.LayoutBounds>
+                <OnPlatform x:TypeArguments="Rectangle" iOS=".5,.5, 200, 200" Android=".5,.53,150,150"/>
+            </AbsoluteLayout.LayoutBounds>
+        </Button>
+
+             <!--APP'S NAME -->
+        <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional"
+                     Spacing="20">
+            <AbsoluteLayout.LayoutBounds>
+                <OnPlatform x:TypeArguments="Rectangle" iOS="0.5, 0.53,300,200" Android=".5,.64,300,200"/>
+            </AbsoluteLayout.LayoutBounds>
+            <Label Text="Who Wants to Be a..." FontFamily="AmericanTypewriter" FontSize="Small" HorizontalOptions="Start" TextColor="Black"/>
+            <Label Text="MillionArt" FontFamily="AmericanTypewriter" FontSize="50" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </StackLayout>
+        <!-- ****** END OF DETAIL AND APP'S NAME *******-->
+
+
+        <StackLayout AbsoluteLayout.LayoutBounds="0,1,1,.26"
+                     AbsoluteLayout.LayoutFlags="All"
+                     BackgroundColor="White"
+                     Spacing="0">
+            <Entry Placeholder="Someone@email.com" Text="{Binding Username}" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" FontSize="Large" TextColor="Black"/>
+            <Entry Placeholder="Password" Text="{Binding password}" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" FontSize="Large" TextColor="Black"/>
+
+            <Button BackgroundColor="#00A6FF"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Text="LOG IN"
+                    TextColor="Black"
+                    FontSize="Large"
+                    FontFamily="Lato"
+                    IsEnabled="true"
+                    Command="{Binding VerifyUserCommand}"/>
+        </StackLayout>
+        
+    </AbsoluteLayout>
+</ContentPage>

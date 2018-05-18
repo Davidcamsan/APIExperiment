@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:converters="clr-namespace:APIExperiment.ViewModels.Converters"
+             x:Name="IndividualArtistView" 
+             x:Class="APIExperiment.Views.IndividualArtistView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ArtistNameResizeConverter x:Key="ArtistNameResize"></converters:ArtistNameResizeConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout Spacing="0" BackgroundColor="White">
+        
+        <!-- ***************START OF ARTIST BANNER-->
+                    <!--Artist_Banner -->
+        <StackLayout x:Name="ArtistBanner" BackgroundColor="#FFC82C" HeightRequest="100">
+            <Label Text="{Binding CurrentArtist.name, Converter={StaticResource ArtistNameResize}}" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" Font="Lato" FontSize="40" TextColor="Black" />
+        </StackLayout>
+        <!-- **************END OF ARTIST BANNER-->
+        
+        <ScrollView>
+            <!--SCROLLABLE VIEW-->
+            <StackLayout Spacing="0" Margin="0,0,0,20">
+                
+                     <!--PAINT DRIPPING IMAGE -->
+                <StackLayout VerticalOptions="Start">
+                    <Image Source="pinturas" VerticalOptions="StartAndExpand" />
+                </StackLayout>
+                     <!-- EN PAINT DRIPPING IMAGE -->
+                
+                <!-- ***************START OF QUICK FACTS SECTION -->
+                <Frame HasShadow="false" OutlineColor="Yellow" Margin="10,0,10,0">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        
+                         <!-- Quick Facts (title) -->
+                        <Frame HasShadow="false" OutlineColor="Black">
+                        <StackLayout HorizontalOptions="Center" Padding="0,0,20,0">
+                            <Label Text="Quick Facts" FontAttributes="Bold" FontSize="Medium" FontFamily="Lato" TextColor="Black" />
+                        </StackLayout>
+                            </Frame>
+                        
+                        <!--START Actual Facts-->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="5,10,5,0" Spacing="25">
+                            
+                                        <!--LEFT COLUMN -->
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Spacing="10">
+                                <StackLayout HorizontalOptions="Start" Spacing="0">
+                                    <Label Text="Birthday:" BackgroundColor="#969FAA" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="{Binding CurrentArtist.birthday}" FontSize="Medium" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="Start" Spacing="0">
+                                    <Label Text="Death:" BackgroundColor="#969FAA" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="{Binding CurrentArtist.deathday}" FontSize="Medium" TextColor="Black" />
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="Start" Spacing="0">
+                                    <Label Text="Gender: " BackgroundColor="#969FAA" FontSize="Medium" TextColor="Black" />
+                                    <Label Text="{Binding CurrentArtist.gender}" FontSize="Medium" TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+                            
+                                           <!--RIGHT COLUMN -->
+                            <StackLayout Orientation="Vertical" HorizontalOptions="End" Spacing="10">
+                                <StackLayout Spacing="0">
+                                    <Label Text="Nationality:" BackgroundColor="#969FAA" FontSize="Medium" TextColor="Black" />
+                                    <Label Text="{Binding CurrentArtist.nationality}" FontSize="Medium" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Spacing="0">
+                                    <Label Text="Hometown:" BackgroundColor="#969FAA" FontSize="Medium" TextColor="Black"/>
+                                    <Label Text="{Binding CurrentArtist.hometown}" LineBreakMode="WordWrap" FontSize="Medium" TextColor="Black" />
+                                </StackLayout>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                       <!--END of Actual Facts -->
+                        
+                    </StackLayout>
+                </Frame>
+                <!-- ***************END OF QUICK FACTS SECTION -->
+
+                <!--*************** START Biography -->
+                <StackLayout Margin="15,20,15,10">
+                    <Frame HasShadow="false" OutlineColor="Black">
+                    <Label Text="Biography" FontSize="Medium" FontAttributes="Bold" FontFamily="Lato" HorizontalOptions="Start" TextColor="Black" />
+                        </Frame>
+                    <Label Text="{Binding CurrentArtist.biography}" 
+                           LineBreakMode="WordWrap"
+                           TextColor="Black"/>
+                </StackLayout>
+                <!--************* END Biography-->
+
+                
+                <Button Text="Tap To Learn More"
+                        TextColor="Black"
+                        FontFamily="Lato"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        BackgroundColor="#00A6FF"
+                        Command="{Binding DirectToArtsyCommand}"
+                        Margin="30,10,30,10"/>
+            </StackLayout>
+        </ScrollView>
+        <!--
+
+        <Label Text="Biography" FontAttributes="Bold" FontSize="20" FontFamily="Lato" x:Name="Biography"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=FactsChart, Property=Y, Factor=1.35}"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=FactsChart, Property=X, Factor=1}"/>
+
+        <StackLayout
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Biography, Property=Y, Factor=1.05}"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Biography, Property=X, Factor=1}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.85}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}">
+            <ScrollView>
+               <Label Text="{Binding CurrentArtist.biography}" LineBreakMode="WordWrap"/>
+            </ScrollView>
+        </StackLayout>
+
+        <Button BackgroundColor="#00A6FF" x:Name="ArtsyBanner"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.6}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.05}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=1, Constant=730}"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=1, Constant=-20}" 
+                Text="Tap To Learn More"
+                Command="{Binding DirectToArtsyCommand}"/>
+                -->
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:converters="clr-namespace:APIExperiment.ViewModels.Converters"
+             x:Class="APIExperiment.Views.TriviaFeedbackView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:AnswerToImage x:Key="AnswerToImage"></converters:AnswerToImage>
+            <converters:AnswerToEnabledConverter x:Key="AnswerToEnabled"></converters:AnswerToEnabledConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <RelativeLayout>
+         <Image Source="{Binding CurrentQuestion.Image}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Y, Factor=0}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=1}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.3}"/>
+        
+        <StackLayout x:Name="QuestionBanner"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.30}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=.0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.1}"
+            Padding="10">
+            <Label Text="{Binding CurrentQuestion.Question}" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
+        </StackLayout>
+
+        <StackLayout 
+            Padding="10"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.5}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="CORRECT ANSWER: " TextColor="Lime" FontSize="Large"/>
+                <Label Text="{Binding CorrectAnswer.Answer}" LineBreakMode="NoWrap"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" 
+                         IsEnabled="{Binding IsCorrect, Converter={StaticResource AnswerToEnabled}}" 
+                         IsVisible="{Binding IsCorrect, Converter={StaticResource AnswerToEnabled}}">
+                <Label Text="CHOSEN ANSWER: " TextColor="Red" FontSize="Large"/>
+                <Label Text="{Binding CurrentAnswer.Answer}" LineBreakMode="WordWrap"/>
+            </StackLayout>
+            <Image Source="{Binding IsCorrect, Converter={StaticResource AnswerToImage}}" HeightRequest="20"/>
+        </StackLayout>
+
+    </RelativeLayout>
+</ContentPage>

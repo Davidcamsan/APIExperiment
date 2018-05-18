@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{E9977B20-6710-4ABD-8E59-7B734BE95600}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APIExperiment/Views/WelcomeView.xaml">
+    <Files>
+      <File FileName="APIExperiment/Views/TriviaQuestionView.xaml" Line="13" Column="33" />
+      <File FileName="APIExperiment/Views/TriviaFeedbackView.xaml" Line="3" Column="69" />
+      <File FileName="APIExperiment/Views/TriviaQuestionView.xaml.cs" Line="16" Column="6" />
+      <File FileName="APIExperiment/Models/LevelModel.cs" Line="26" Column="108" />
+      <File FileName="APIExperiment/Views/WelcomeView.xaml" Line="70" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/IndividualArtistView.xaml" relfile="APIExperiment/Views/IndividualArtistView.xaml" line="11" column="1" />
+      <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/SignUpView.xaml" relfile="APIExperiment/Views/SignUpView.xaml" line="39" column="1" />
+      <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/SignUpView.xaml" relfile="APIExperiment/Views/SignUpView.xaml" line="58" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.APIExperiment.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E54572E0-8A35-4BC7-A791-99069E5EB421">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.APIExperiment.iOS>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.APIExperiment.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+</Properties>

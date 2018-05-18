@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="0,35,0,0"
+             x:Class="APIExperiment.Views.TriviaQuestionView">
+
+    <RelativeLayout>
+        <Image Source="{Binding CurrentQuestion.Image}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=1}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.3}"
+               BackgroundColor="#FFC82C"/>
+        
+        <Image Source="pinturas"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.30}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.6}"/>
+
+        <!--
+        <StackLayout x:Name="QuestionBanner"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.30}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=.0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.1}"
+            Padding="10"
+                     BackgroundColor="White">-->
+
+        <Label x:Name="QuestionBanner" Text="{Binding CurrentQuestion.Question}" FontSize="Large" TextColor="Black" LineBreakMode="WordWrap"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+            Property=Height, Factor=.30}"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+            Property=Width, Factor=0}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+            Property=Width, Factor=1}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=.05}"
+               BackgroundColor="Blue"/>
+
+
+
+        <Picker Title="Pick Your Answer"
+                ItemsSource="{Binding Answers}"  
+                ItemDisplayBinding="{Binding Answer}"
+                SelectedItem="{Binding CurrentAnswer}"
+                TextColor="Black"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.5}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+        <StackLayout
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.8}"
+             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}">
+            <Button Text="Submit" Command="{Binding SubmitAnswerCommand}" BackgroundColor="Blue" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+                
+        
+
+        <!--
+        <ListView x:Name="lstvQuestions"
+                  ItemsSource="{Binding Answers}"
+                  HasUnevenRows="false"
+                  SeparatorColor="Orange"
+                  BackgroundColor="Teal"
+                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.5}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.3}">
+                  
+                  
+                <ListView.ItemTemplate> 
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ID}" />
+                                <Label Text="{Binding Answer}" FontSize="Large" TextColor="Black" LineBreakMode="WordWrap" />
+                            </StackLayout>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>  
+           -->    
+
+
+        
+    </RelativeLayout>
+        
+        <!--
+        <StackLayout Margin="20" BackgroundColor="Teal" VerticalOptions="Center" HorizontalOptions="Center">
+
+            <ListView x:Name="lstvQuestions"
+                  ItemsSource="{Binding Answers}"
+                   HasUnevenRows="false"
+                   SeparatorColor="Orange"
+                    VerticalOptions="Center"
+                      HorizontalOptions="Fill">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ID}" />
+                                <Label Text="{Binding Answer}" FontSize="Medium" TextColor="Black" />
+                            </StackLayout>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>  
+
+        </StackLayout>
+        
+    </StackLayout> -->
+ 
+</ContentPage>

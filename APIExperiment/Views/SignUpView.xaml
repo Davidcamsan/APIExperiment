@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APIExperiment.Views.SignUpView">
+
+    <RelativeLayout>
+        <Image x:Name="Painting" Source="Zombie"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+        Property=Width,Factor=1 }"/>
+        
+        <StackLayout x:Name="Veil" 
+                     BackgroundColor="White"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView,ElementName=Painting,
+            Property=Width, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView,ElementName=Painting,
+            Property=Height, Factor=1}"
+                     Opacity=".6"/>
+
+
+        <StackLayout x:Name="InputContainer"
+                     BackgroundColor="White"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Painting,
+            Property=Height, Factor=.8}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+        Property=Width, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=.76}">
+        </StackLayout>
+
+
+
+            <OnPlatform x:TypeArguments="View">
+            
+            <!-- ********** iOS ********** -->
+                <On Platform="iOS"> 
+                     <StackLayout 
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=InputContainer, 
+            Property=Height, Factor=.5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Width, Factor=.12}">
+                    <Frame HasShadow="false" OutlineColor="Black">
+                        <Entry Placeholder="Full Name" Text="{Binding CurrentUser.Name}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    </Frame>
+                    <Frame HasShadow="false" OutlineColor="Black">
+                        <Entry Placeholder="Email@something.com" Text="{Binding CurrentUser.Email}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    </Frame>
+                    <Frame HasShadow="false" OutlineColor="Black">
+                        <Entry Placeholder="Password" Text="{Binding CurrentUser.Password}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    </Frame>
+                    <Frame HasShadow="false" OutlineColor="Black">
+                        <Entry Placeholder="Confirm Password" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    </Frame>
+                    </StackLayout>    
+                </On>
+
+            <!--********** ANDROID ***********-->
+                <On Platform="Android">
+                     <StackLayout
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=InputContainer, 
+            Property=Height, Factor=.54}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Width, Factor=.16}">
+                    <Entry Placeholder="Full Name" Text="{Binding CurrentUser.Name}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    <Entry Placeholder="Email@something.com" Text="{Binding CurrentUser.Email}"  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    <Entry Placeholder="Password" Text="{Binding CurrentUser.Password}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                    <Entry Placeholder="Confirm Password" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
+                        </StackLayout>
+                </On>
+            </OnPlatform>
+
+
+       
+        <Image Source="contact"
+               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Height, Factor=.26}"
+               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Width, Factor=0.28}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Width, Factor=.45}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=InputContainer,
+            Property=Height, Factor=.25}"/>
+
+        <Button BackgroundColor="#13CE66"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=.9}"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Width, Factor=1}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=.1}"
+                Text="SIGN UP"
+                FontSize="Large"
+                FontFamily="Lato"
+                TextColor="Black"
+                Command="{Binding CreateUserCommand}"/>
+
+        
+
+        
+        
+                
+    </RelativeLayout>
+</ContentPage>
