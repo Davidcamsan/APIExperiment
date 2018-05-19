@@ -154,12 +154,19 @@
     <AndroidResource Include="Resources\drawable\pinturas.png" />
     <AndroidResource Include="Resources\drawable\Zombie.png" />
     <AndroidResource Include="Resources\drawable\contact.png" />
-    <AndroidResource Include="Resources\drawable\Check.png" />
     <AndroidResource Include="Resources\drawable\X.png" />
     <AndroidResource Include="Resources\drawable\Lev1Q1.png" />
     <AndroidResource Include="Resources\drawable\L1Q2.png" />
     <AndroidResource Include="Resources\drawable\L1Q3.png" />
     <AndroidResource Include="Resources\drawable\L1Q4.png" />
+    <AndroidResource Include="Resources\drawable\SignInError.png" />
+    <AndroidResource Include="Resources\drawable\L1Q5.png" />
+    <AndroidResource Include="Resources\drawable\L1Q6.png" />
+    <AndroidResource Include="Resources\drawable\L1Q7.png" />
+    <AndroidResource Include="Resources\drawable\L1Q8.png" />
+    <AndroidResource Include="Resources\drawable\L1Q9.png" />
+    <AndroidResource Include="Resources\drawable\L1Q10.png" />
+    <AndroidResource Include="Resources\drawable\Check.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

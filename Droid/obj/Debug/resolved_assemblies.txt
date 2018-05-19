@@ -41,11 +41,11 @@
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Threading.Tasks.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Globalization.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Net.Http.dll
-/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Linq.Expressions.dll
-/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Linq.Queryable.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Linq.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Collections.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Threading.dll
+/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Linq.Expressions.dll
+/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Linq.Queryable.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Reflection.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Collections.Concurrent.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/android/assets/System.Reflection.Primitives.dll

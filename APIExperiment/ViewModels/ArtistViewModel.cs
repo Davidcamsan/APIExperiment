@@ -294,19 +294,52 @@ namespace APIExperiment.ViewModels
         //COMMANDS RELATING TO USER PROFILE
 		public ICommand CreateUserCommand { get; set; }
 
-		private void CreateUser()
+		private async void CreateUser()
 		{
-			CurrentUser.Level = 1;
-			CurrentUser.ID = _getRealmInstance.All<UserModel>().Count() + 1;
-			_getRealmInstance.Write(() =>
+			if( (lstUsers.Where(x => x.Email == CurrentUser.Email).ToList().Count() == 0) &&
+			   (CurrentUser.Email != "" && CurrentUser.Email != null) && 
+			   (CurrentUser.Name != "" && CurrentUser.Name != null) && 
+			   (CurrentUser.Password != "" && CurrentUser.Password != null))
 			{
-				_getRealmInstance.Add(CurrentUser);
-			});
+				CurrentUser.Level = 1;
+                CurrentUser.ID = _getRealmInstance.All<UserModel>().Count() + 1;
+                _getRealmInstance.Write(() =>
+                {
+                    _getRealmInstance.Add(CurrentUser);
+                });
 
 
-			lstUsers = new ObservableCollection<UserModel>(_getRealmInstance.All<UserModel>().AsEnumerable());
+                lstUsers = new ObservableCollection<UserModel>(_getRealmInstance.All<UserModel>().AsEnumerable());
+                await App.Current.MainPage.Navigation.PopToRootAsync();
+			}
+			else
+				await App.Current.MainPage.Navigation.PushModalAsync(new SignUpErrorView());        
+
+		}
 
 
+		public Command UpdateUserCommand
+		{
+			get{
+				return new Command(() =>
+				{
+					UserModel UserUpdate = new UserModel
+					{
+						ID = CurrentUser.ID,
+						Name = CurrentUser.Name,
+						Email = CurrentUser.Email,
+						Password = CurrentUser.Password,
+						Level = CurrentUser.Level,
+						LoggedIn = CurrentUser.LoggedIn
+
+					};
+
+					_getRealmInstance.Write(() =>
+					{
+						_getRealmInstance.Add(UserUpdate, update: true);
+					});
+				});
+			}
 		}
         
 
@@ -314,6 +347,7 @@ namespace APIExperiment.ViewModels
 		public ICommand TakeToTriviaQuestionCommand { get; set; }
 		private void TakeToTriviaQuestion()
 		{
+			
 			UnansweredQuestions = new ObservableCollection<QuestionModel>(CurrentLevel.QuestionSet);
 			CurrentQuestion = UnansweredQuestions.First();
 			Answers =new ObservableCollection<AnswerOptionModel>(CurrentQuestion.Answers);
@@ -328,7 +362,7 @@ namespace APIExperiment.ViewModels
 		private void SelectAnswer(int id)
 		{
 
-			CurrentAnswer = Answers.Where(x => x.ID == id).First();
+		  CurrentAnswer = Answers.Where(x => x.ID == id).First();
             
 		}
 
@@ -349,6 +383,7 @@ namespace APIExperiment.ViewModels
 		public ICommand NextQuestionCommand { get; set; }
 		private void NextQuestion()
 		{
+			
 			if (IsCorrect)
 				HowManyCorrect++;
 
@@ -358,8 +393,8 @@ namespace APIExperiment.ViewModels
 				CurrentQuestion = UnansweredQuestions.First();
 				Answers = new ObservableCollection<AnswerOptionModel>((CurrentQuestion.Answers).ToList());
 				CorrectAnswer = Answers.Where(x => x.IsCorrect == true).ToList().First();
-
 				App.Current.MainPage = new TriviaQuestionView();
+
 			}
 			else
 				App.Current.MainPage = new GradeView();
@@ -424,11 +459,11 @@ namespace APIExperiment.ViewModels
 
 		public ICommand SeeSpecificArtistCommand { get; set; }
 
-		private async void SeeSpecificArtist(string id)
+		private void SeeSpecificArtist(string id)
 		{
 			CurrentArtist = lstArtist.Where(x => x.id == id).FirstOrDefault();
 
-			await App.Current.MainPage.Navigation.PushAsync(new IndividualArtistView());
+			 App.Current.MainPage.Navigation.PushAsync(new IndividualArtistView());
 
 		}
 
@@ -442,37 +477,54 @@ namespace APIExperiment.ViewModels
         
 		public ICommand GoToSignUpCommand { get; set; }
 
-		private void GoToSignUp()
+		private async void GoToSignUp()
 		{
-			App.Current.MainPage.Navigation.PushAsync(new SignUpView());
+			await App.Current.MainPage.Navigation.PushAsync(new SignUpView());
 		}
 
 		public ICommand GoToLogInCommand { get; set; }
-
-		private void GoToLogIn()
+        
+		private async void GoToLogIn()
 		{
-			App.Current.MainPage.Navigation.PushAsync(new LogInView());
+			if (lstUsers.Where(x => x.LoggedIn == true).ToList().Count() > 0)
+            {
+                CurrentUser = lstUsers.Where(x => x.LoggedIn == true).ToList().First();
+				App.Current.MainPage = new NavigationPage(new MainTabContainer());
+            }
+			else 
+				await App.Current.MainPage.Navigation.PushAsync(new LogInView());
 		}
         
 		public ICommand GoToProfileCommand { get; set; }
         
-        private void GoToProfile()
+		private async void GoToProfile()
         {
-			App.Current.MainPage.Navigation.PushAsync(new UserProfileView());
+			await App.Current.MainPage.Navigation.PushAsync(new UserProfileView());
         }
 
 
 		public ICommand VerifyUserCommand { get; set; }
-        private void VerifyUser()
+        private async void VerifyUser()
         {
 			CurrentUser = lstUsers.Where(x => x.Email == Username && x.Password == password).FirstOrDefault();
-			App.Current.MainPage = new UserProfileView();         
+			if (CurrentUser != null)
+				App.Current.MainPage = new NavigationPage(new MainTabContainer());
+			else
+				await App.Current.MainPage.Navigation.PushModalAsync(new LogInErrorView());
+
+			        
         }
+		public ICommand CloseModalCommand { get; set; }
+		private async void CloseModal()
+		{
+			await App.Current.MainPage.Navigation.PopModalAsync();
+		}
+
 
 		public ICommand GoToLevelsCommand { get; set; }
 		private void GoToLevels()
 		{
-			App.Current.MainPage = new LevelsView();
+			App.Current.MainPage = new NavigationPage(new MainTabContainer());
 		}
 
 
@@ -496,7 +548,7 @@ namespace APIExperiment.ViewModels
 			CreateUserCommand = new Command(CreateUser);
 			GoToProfileCommand = new Command(GoToProfile);
 			VerifyUserCommand = new Command(VerifyUser);
-
+			CloseModalCommand = new Command(CloseModal);
 
 
 			//GAME SECTION COMMANDS

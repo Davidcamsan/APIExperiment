@@ -70,6 +70,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainTabContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LogInErrorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SignUpErrorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -119,6 +131,15 @@
     <Compile Include="ViewModels\Converters\IsSelectedToColorConverter.cs" />
     <Compile Include="Views\GradeView.xaml.cs">
       <DependentUpon>GradeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainTabContainer.xaml.cs">
+      <DependentUpon>MainTabContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogInErrorView.xaml.cs">
+      <DependentUpon>LogInErrorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SignUpErrorView.xaml.cs">
+      <DependentUpon>SignUpErrorView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="30"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="APIExperiment.Views.UserProfileView">
     
@@ -8,6 +9,7 @@
         <Label Text="{Binding CurrentUser.Name}" />
         <Label Text="{Binding CurrentUser.Email}" />
         <Label Text="{Binding CurrentUser.Level}" />
+        <Switch IsToggled="{Binding CurrentUser.LoggedIn}"/>
     </StackLayout>
     
 </ContentPage>

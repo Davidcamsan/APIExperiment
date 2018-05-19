@@ -40,16 +40,40 @@ namespace APIExperiment.Droid
 			public static int L1Q1 = 0;
 			
 			// aapt resource value: 0
+			public static int L1Q10 = 0;
+			
+			// aapt resource value: 0
 			public static int L1Q2 = 0;
 			
 			// aapt resource value: 0
 			public static int L1Q3 = 0;
 			
 			// aapt resource value: 0
+			public static int L1Q4 = 0;
+			
+			// aapt resource value: 0
+			public static int L1Q5 = 0;
+			
+			// aapt resource value: 0
+			public static int L1Q6 = 0;
+			
+			// aapt resource value: 0
+			public static int L1Q7 = 0;
+			
+			// aapt resource value: 0
+			public static int L1Q8 = 0;
+			
+			// aapt resource value: 0
+			public static int L1Q9 = 0;
+			
+			// aapt resource value: 0
 			public static int Lev1Q1 = 0;
 			
 			// aapt resource value: 0
 			public static int pinturas = 0;
+			
+			// aapt resource value: 0
+			public static int SignInError = 0;
 			
 			// aapt resource value: 0
 			public static int X = 0;

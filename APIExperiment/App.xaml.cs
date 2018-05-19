@@ -1,4 +1,6 @@
 ﻿using Xamarin.Forms;
+using Realms;
+using APIExperiment.ViewModels;
 using APIExperiment.Views;
 
 namespace APIExperiment
@@ -9,7 +11,7 @@ namespace APIExperiment
         {
             InitializeComponent();
 
-			MainPage = new LevelsView();//new NavigationPage(new WelcomeView());
+			MainPage = new NavigationPage(new WelcomeView());
         }
 
         protected override void OnStart()

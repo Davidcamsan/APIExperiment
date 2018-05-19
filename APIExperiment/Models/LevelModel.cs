@@ -61,7 +61,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q4.Answers.Add(Answer3_Q4_L1);
 			QuestionL1_Q4.Answers.Add(Answer4_Q4_L1);
 
-			QuestionModel QuestionL1_Q5 = new QuestionModel { ID = 5, Question = "What were the main materials utilized in Costa Rican Indigenous Art?"};
+			QuestionModel QuestionL1_Q5 = new QuestionModel { ID = 5, Question = "What were the main materials utilized in Costa Rican Indigenous Art?", Image="L1Q5"};
             AnswerOptionModel Answer1_Q5_L1 = new AnswerOptionModel { ID = 1, Answer = "Jade and Stone", IsCorrect = false };
             AnswerOptionModel Answer2_Q5_L1 = new AnswerOptionModel { ID = 2, Answer = "Gold and Stone", IsCorrect = false };
             AnswerOptionModel Answer3_Q5_L1 = new AnswerOptionModel { ID = 3, Answer = "Emerald and Gold", IsCorrect = false };
@@ -72,7 +72,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q5.Answers.Add(Answer4_Q5_L1);
 
 
-			QuestionModel QuestionL1_Q6 = new QuestionModel { ID = 6, Question = "Where was Albrecht Durer from and what medium is he best known for?"};
+			QuestionModel QuestionL1_Q6 = new QuestionModel { ID = 6, Question = "Where was Albrecht Durer from and what medium is he best known for?", Image="L1Q6"};
             AnswerOptionModel Answer1_Q6_L1 = new AnswerOptionModel { ID = 1, Answer = "The Netherlands and Drawing", IsCorrect = false };
             AnswerOptionModel Answer2_Q6_L1 = new AnswerOptionModel { ID = 2, Answer = "Belgium and Painting", IsCorrect = false };
             AnswerOptionModel Answer3_Q6_L1 = new AnswerOptionModel { ID = 3, Answer = "Germany and Engraving", IsCorrect = true };
@@ -83,7 +83,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q6.Answers.Add(Answer4_Q6_L1);
 
             
-			QuestionModel QuestionL1_Q7 = new QuestionModel { ID = 7, Question = "When was Costa Rican Artist Francisco Amighetti born?" };
+			QuestionModel QuestionL1_Q7 = new QuestionModel { ID = 7, Question = "When was Costa Rican Artist Francisco Amighetti born?", Image="L1Q7" };
             AnswerOptionModel Answer1_Q7_L1 = new AnswerOptionModel { ID = 1, Answer = "1907", IsCorrect = true };
             AnswerOptionModel Answer2_Q7_L1 = new AnswerOptionModel { ID = 2, Answer = "1922", IsCorrect = false };
             AnswerOptionModel Answer3_Q7_L1 = new AnswerOptionModel { ID = 3, Answer = "1888", IsCorrect = false };
@@ -94,7 +94,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q7.Answers.Add(Answer4_Q7_L1);
 
 
-			QuestionModel QuestionL1_Q8 = new QuestionModel { ID = 8, Question = "What does the term Chiaroscuro refer to?"};
+			QuestionModel QuestionL1_Q8 = new QuestionModel { ID = 8, Question = "What does the term Chiaroscuro refer to?", Image="L1Q8"};
             AnswerOptionModel Answer1_Q8_L1 = new AnswerOptionModel { ID = 1, Answer = "The use of bright and dark tones in a photograph", IsCorrect = false };
             AnswerOptionModel Answer2_Q8_L1 = new AnswerOptionModel { ID = 2, Answer = "The sharp contrast between light and shadows in paintings", IsCorrect = true };
             AnswerOptionModel Answer3_Q8_L1 = new AnswerOptionModel { ID = 3, Answer = "The sharp edges of marble sculptures in the renaissance", IsCorrect = false };
@@ -106,7 +106,7 @@ namespace APIExperiment.Models
 
 
 
-			QuestionModel QuestionL1_Q9 = new QuestionModel { ID = 9, Question = "What did Contemporaries think of Gothic Architecture?" };
+			QuestionModel QuestionL1_Q9 = new QuestionModel { ID = 9, Question = "What did Contemporaries think of Gothic Architecture?", Image="L1Q9"};
             AnswerOptionModel Answer1_Q9_L1 = new AnswerOptionModel { ID = 1, Answer = "It was an expression of modernity", IsCorrect = true };
             AnswerOptionModel Answer2_Q9_L1 = new AnswerOptionModel { ID = 2, Answer = "It seemed a bit outdated", IsCorrect = false };
             AnswerOptionModel Answer3_Q9_L1 = new AnswerOptionModel { ID = 3, Answer = "It was too sombre and cold", IsCorrect = false };
@@ -117,7 +117,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q9.Answers.Add(Answer4_Q9_L1);
 
 
-			QuestionModel QuestionL1_Q10 = new QuestionModel { ID = 10, Question = "Which of the following is a characteristic of Surrealism?" };
+			QuestionModel QuestionL1_Q10 = new QuestionModel { ID = 10, Question = "Which of the following is a characteristic of Surrealism?", Image="L1Q10" };
 			AnswerOptionModel Answer1_Q10_L1 = new AnswerOptionModel { ID = 1, Answer = "The study of the subconscious and the fantastic", IsCorrect = true };
             AnswerOptionModel Answer2_Q10_L1 = new AnswerOptionModel { ID = 2, Answer = "The repression of desires", IsCorrect = false };
 			AnswerOptionModel Answer3_Q10_L1 = new AnswerOptionModel { ID = 3, Answer = "The faithful representation of reality", IsCorrect = false };

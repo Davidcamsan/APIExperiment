@@ -8,31 +8,11 @@ Function=xamarin_log
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
 Function=xamarin_get_locale_country_code
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_start_wwan
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
-Function=xamarin_localized_string_format
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_1
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_2
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_3
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_4
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_5
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_6
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_7
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_8
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_9
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_init_nsthread
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4_objc_msgSend
@@ -923,11 +903,33 @@ Function=xamarin_simd__Vector2_objc_msgSend_stret_nint
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nint
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=UIApplicationMain
-	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_1
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_2
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_3
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_4
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_5
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_6
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_7
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_8
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_9
+	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_init_nsthread
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=CreateZStream
 	/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll

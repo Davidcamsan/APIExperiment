@@ -4,6 +4,9 @@
              x:Class="APIExperiment.Views.SignUpView">
 
     <RelativeLayout>
+
+        
+
         <Image x:Name="Painting" Source="Zombie"
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
         Property=Width,Factor=1 }"/>
@@ -93,9 +96,7 @@
                 TextColor="Black"
                 Command="{Binding CreateUserCommand}"/>
 
-        
 
-        
         
                 
     </RelativeLayout>

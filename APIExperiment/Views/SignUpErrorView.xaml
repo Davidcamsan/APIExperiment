@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="20,70"
+             x:Class="APIExperiment.Views.SignUpErrorView">
+     <StackLayout>
+        
+        <Image Source="SignInError" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <Label Text="OOPS! Your Email might already be Registered or some of the Form's fields are Empty!" 
+               LineBreakMode="WordWrap"
+               TextColor="Black"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand"/>
+        <Button BackgroundColor="#13CE66"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="EndAndExpand"
+                    Text="Back"
+                    TextColor="Black"
+                    FontSize="Large"
+                    FontFamily="Lato"
+                    IsEnabled="true"
+                    Command="{Binding CloseModalCommand}"/>
+    </StackLayout>
+</ContentPage>

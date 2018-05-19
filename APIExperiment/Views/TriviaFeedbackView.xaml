@@ -13,7 +13,7 @@
     </ContentPage.Resources>
 
 
-    <RelativeLayout>
+    <RelativeLayout BackgroundColor="White">
 
          <Image Source="pinturas"
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
@@ -47,8 +47,17 @@
         </StackLayout>
 
         <StackLayout 
+            BackgroundColor="White"
+            Opacity=".8"
             Padding="10"
-            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.5}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.33}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, 
+         Property=Height, Factor=.3}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+        
+        <StackLayout
+            Padding="10"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=QuestionBanner, Property=Y, Factor=1.33}"
             RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
             <StackLayout Orientation="Horizontal">
                 <Label Text="CORRECT ANSWER: " TextColor="Lime" FontSize="Large" FontAttributes="Bold"/>
@@ -60,7 +69,7 @@
                 <Label Text="CHOSEN ANSWER: " TextColor="Red" FontSize="Large" FontAttributes="Bold"/>
                 <Label Text="{Binding CurrentAnswer.Answer}" FontSize="Large" FontAttributes="Bold" TextColor="Black" LineBreakMode="WordWrap"/>
             </StackLayout>
-            <Image Source="{Binding IsCorrect, Converter={StaticResource AnswerToImage}}" HeightRequest="30"/>
+            <Image Source="{Binding IsCorrect, Converter={StaticResource AnswerToImage}}" HeightRequest="20"/>
         </StackLayout>
 
         <Button Text="NEXT" Command="{Binding NextQuestionCommand}" BackgroundColor="#FFC82C" TextColor="Black" FontAttributes="Bold"
@@ -69,6 +78,7 @@
                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.1}"
                 BorderWidth="0"/>
+
 
     </RelativeLayout>
 </ContentPage>

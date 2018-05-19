@@ -1,16 +1,7 @@
-﻿<Properties StartupConfiguration="{E9977B20-6710-4ABD-8E59-7B734BE95600}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="APIExperiment/Views/GradeView.xaml.cs">
+﻿<Properties StartupConfiguration="{D1D4B02E-F11C-419B-9EAB-F1CF271943F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APIExperiment/Models/LevelModel.cs">
     <Files>
-      <File FileName="APIExperiment/Views/TriviaQuestionView.xaml" Line="94" Column="123" />
-      <File FileName="APIExperiment/Views/TriviaFeedbackView.xaml" Line="69" Column="80" />
-      <File FileName="APIExperiment/ViewModels/ArtistViewModel.cs" Line="503" Column="52" />
-      <File FileName="APIExperiment/Models/LevelModel.cs" Line="17" Column="3" />
-      <File FileName="APIExperiment/ViewModels/Converters/IsSelectedToColorConverter.cs" Line="5" Column="46" />
-      <File FileName="APIExperiment/ViewModels/Converters/AnswerToImage.cs" Line="8" Column="29" />
-      <File FileName="APIExperiment/Models/AnswerOptionModel.cs" Line="1" Column="1" />
-      <File FileName="APIExperiment/Views/TriviaFeedbackView.xaml.cs" Line="15" Column="1" />
-      <File FileName="APIExperiment/Views/GradeView.xaml" Line="11" Column="37" />
-      <File FileName="APIExperiment/Views/GradeView.xaml.cs" Line="3" Column="31" />
+      <File FileName="APIExperiment/Models/LevelModel.cs" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -19,11 +10,10 @@
       <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/IndividualArtistView.xaml" relfile="APIExperiment/Views/IndividualArtistView.xaml" line="11" column="1" />
       <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/SignUpView.xaml" relfile="APIExperiment/Views/SignUpView.xaml" line="39" column="1" />
       <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/Views/SignUpView.xaml" relfile="APIExperiment/Views/SignUpView.xaml" line="58" column="1" />
-      <Breakpoint file="/Users/carmen/Projects/APIExperiment/APIExperiment/ViewModels/ArtistViewModel.cs" relfile="APIExperiment/ViewModels/ArtistViewModel.cs" line="349" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.APIExperiment.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5A71C3AE-3258-4DB7-B217-CF2B5BA77FB4">
+  <MonoDevelop.Ide.ItemProperties.APIExperiment.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E54572E0-8A35-4BC7-A791-99069E5EB421">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.APIExperiment.iOS>
   <MultiItemStartupConfigurations />

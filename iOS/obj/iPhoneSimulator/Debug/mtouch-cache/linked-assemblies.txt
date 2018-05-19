@@ -1,3 +1,4 @@
+RemoveDynamicRegistrar:false
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/APIExperiment.iOS.exe
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
@@ -48,13 +49,11 @@
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Data.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Numerics.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Transactions.dll
-/Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Mono.Data.Tds.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Diagnostics.StackTrace.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/OpenTK-1.0.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Globalization.Extensions.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.IO.Compression.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.IO.Compression.FileSystem.dll
-/Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.InteropServices.RuntimeInformation.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.Serialization.Xml.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.Serialization.Primitives.dll
 /Users/carmen/Projects/APIExperiment/iOS/bin/iPhoneSimulator/Debug/APIExperiment.iOS.app:/Users/carmen/Projects/APIExperiment/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Security.Cryptography.Algorithms.dll

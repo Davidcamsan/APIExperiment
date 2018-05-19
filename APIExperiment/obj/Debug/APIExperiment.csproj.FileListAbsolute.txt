@@ -29,7 +29,9 @@
 /Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.LevelsView.xaml.g.cs
 /Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.TriviaQuestionView.xaml.g.cs
 /Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.TriviaFeedbackView.xaml.g.cs
+/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.GradeView.xaml.g.cs
+/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.MainTabContainer.xaml.g.cs
+/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.LogInErrorView.xaml.g.cs
+/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.SignUpErrorView.xaml.g.cs
 /Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.dll
 /Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.pdb
-/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.csprojResolveAssemblyReference.cache
-/Users/carmen/Projects/APIExperiment/APIExperiment/obj/Debug/APIExperiment.Views.GradeView.xaml.g.cs
