@@ -50,9 +50,6 @@
                     <Frame HasShadow="false" OutlineColor="Black">
                         <Entry Placeholder="Password" Text="{Binding CurrentUser.Password}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
                     </Frame>
-                    <Frame HasShadow="false" OutlineColor="Black">
-                        <Entry Placeholder="Confirm Password" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
-                    </Frame>
                     </StackLayout>    
                 </On>
 
@@ -66,7 +63,6 @@
                     <Entry Placeholder="Full Name" Text="{Binding CurrentUser.Name}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
                     <Entry Placeholder="Email@something.com" Text="{Binding CurrentUser.Email}"  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
                     <Entry Placeholder="Password" Text="{Binding CurrentUser.Password}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
-                    <Entry Placeholder="Confirm Password" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large" TextColor="Black"/>
                         </StackLayout>
                 </On>
             </OnPlatform>

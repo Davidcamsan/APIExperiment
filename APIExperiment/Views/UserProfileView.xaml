@@ -5,11 +5,14 @@
              x:Class="APIExperiment.Views.UserProfileView">
     
     <StackLayout Padding="10">
-        <Label Text="{Binding CurrentUser.ID}" />
-        <Label Text="{Binding CurrentUser.Name}" />
-        <Label Text="{Binding CurrentUser.Email}" />
-        <Label Text="{Binding CurrentUser.Level}" />
-        <Switch IsToggled="{Binding CurrentUser.LoggedIn}"/>
+        <Label Text="{Binding CurrentUser.ID,StringFormat='ID: {0}'}" FontSize="Large" TextColor="Black" FontAttributes="Bold"/>
+        <Label Text="{Binding CurrentUser.Name,StringFormat='Name: {0}'}" FontSize="Large" TextColor="Black" FontAttributes="Bold"/>
+        <Label Text="{Binding CurrentUser.Email,StringFormat='Email: {0}'}" FontSize="Large" TextColor="Black" FontAttributes="Bold"/>
+        <StackLayout Orientation="Horizontal" Spacing="5">
+            <Label Text="Stay Logged In?" FontSize="Large" TextColor="Black" FontAttributes="Bold"/>
+            <Switch IsToggled="{Binding CurrentUser.LoggedIn}"/>
+        </StackLayout>
+
     </StackLayout>
     
 </ContentPage>

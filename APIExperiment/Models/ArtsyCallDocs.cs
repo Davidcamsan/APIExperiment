@@ -19,7 +19,7 @@ namespace APIExperiment.Models
         {
         }
 
-        private static string token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IiIsImV4cCI6MTUyNjc0MTE1OCwiaWF0IjoxNTI2MTM2MzU4LCJhdWQiOiI1YWUxMGUyM2NiNGMyNzZkNDY5MzQ4NDEiLCJpc3MiOiJHcmF2aXR5IiwianRpIjoiNWFmNmZlMjYyNzViMjQ3MzQwODU0ZGU4In0.D0uD1GwEKGtFYFP6Iob2aK-qnHViptdsgXzX59KUOvg";
+		private static string token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IiIsImV4cCI6MTUyNzM0Njc0NSwiaWF0IjoxNTI2NzQxOTQ1LCJhdWQiOiI1YWUxMGUyM2NiNGMyNzZkNDY5MzQ4NDEiLCJpc3MiOiJHcmF2aXR5IiwianRpIjoiNWIwMDNiYjk4YjNiODEzNGM5YzQ0ODRiIn0.gwNollo6zIOeUGIMBD_JUw-3s4pC8XwizobqNjv-GAU";
         public static async Task<ObservableCollection<Artists>> getArtistDocs(string searchUrl, HttpsStack stack )
         {
             ObservableCollection<Artists> Artist = new ObservableCollection<Artists>();

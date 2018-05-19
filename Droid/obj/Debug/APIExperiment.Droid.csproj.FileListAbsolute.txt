@@ -79,6 +79,7 @@
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/R.cs.flag
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/R.txt
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/uploadflags.txt
+/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.csprojResolveAssemblyReference.cache
 /Users/carmen/Projects/APIExperiment/Droid/bin/Debug/Mono.Android.pdb
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/linksrc/APIExperiment.Droid.pdb
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/linksrc/APIExperiment.pdb

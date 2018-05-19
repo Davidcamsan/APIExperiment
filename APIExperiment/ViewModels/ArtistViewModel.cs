@@ -567,6 +567,11 @@ namespace APIExperiment.ViewModels
 			if (_getRealmInstance.All<LevelModel>().Count() == 0)
 				LevelModel.PopulateLevels(_getRealmInstance);
 			lstLevels = new ObservableCollection<LevelModel>(_getRealmInstance.All<LevelModel>().AsEnumerable());
+			if (lstUsers.Where(x => x.LoggedIn == true).ToList().Count() > 0)
+            {
+                CurrentUser = lstUsers.Where(x => x.LoggedIn == true).ToList().First();
+                App.Current.MainPage = new NavigationPage(new MainTabContainer());
+            }
 
 		}
 		#endregion INITIALIZATION COMMANDS

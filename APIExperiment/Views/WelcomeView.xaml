@@ -28,7 +28,7 @@
                 AbsoluteLayout.LayoutFlags="PositionProportional" 
                 BackgroundColor="#FFC82C">
             <AbsoluteLayout.LayoutBounds>
-                <OnPlatform x:TypeArguments="Rectangle" iOS=".5,.5, 200, 200" Android=".5,.53,150,150"/>
+                <OnPlatform x:TypeArguments="Rectangle" iOS=".5,.61, 200, 200" Android=".5,.6,150,150"/>
             </AbsoluteLayout.LayoutBounds>
         </Button>
 
@@ -36,7 +36,7 @@
         <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional"
                      Spacing="20">
             <AbsoluteLayout.LayoutBounds>
-                <OnPlatform x:TypeArguments="Rectangle" iOS="0.5, 0.53,300,200" Android=".5,.64,300,200"/>
+                <OnPlatform x:TypeArguments="Rectangle" iOS="0.5, 0.63,300,200" Android=".5,.7,300,200"/>
             </AbsoluteLayout.LayoutBounds>
             <Label Text="Who Wants to Be a..." FontFamily="AmericanTypewriter" FontSize="Small" HorizontalOptions="Start" TextColor="Black"/>
             <Label Text="MillionArt" FontFamily="AmericanTypewriter" FontSize="50" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>

@@ -1,7 +1,13 @@
-﻿<Properties StartupConfiguration="{D1D4B02E-F11C-419B-9EAB-F1CF271943F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="APIExperiment/Models/LevelModel.cs">
+﻿<Properties StartupConfiguration="{E9977B20-6710-4ABD-8E59-7B734BE95600}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="APIExperiment/Views/MainTabContainer.xaml.cs">
     <Files>
-      <File FileName="APIExperiment/Models/LevelModel.cs" Line="13" Column="3" />
+      <File FileName="APIExperiment/Views/ArtistView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/GradeView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/IndividualArtistView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/LevelsView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/LogInErrorView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/LogInView.xaml.cs" Line="1" Column="1" />
+      <File FileName="APIExperiment/Views/MainTabContainer.xaml.cs" Line="16" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,7 +19,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.APIExperiment.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E54572E0-8A35-4BC7-A791-99069E5EB421">
+  <MonoDevelop.Ide.ItemProperties.APIExperiment.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC588773-0328-4C4C-9EA2-09536DC581E3">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.APIExperiment.iOS>
   <MultiItemStartupConfigurations />
