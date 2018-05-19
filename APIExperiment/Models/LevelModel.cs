@@ -30,7 +30,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q1.Answers.Add(Answer4_Q1_L1);
             
 
-			QuestionModel QuestionL1_Q2 = new QuestionModel { ID = 2, Question = "Which of the following is true about the artistic movement known as Modernism?"};
+			QuestionModel QuestionL1_Q2 = new QuestionModel { ID = 2, Question = "Which of the following is true about the artistic movement known as Modernism?", Image="L1Q2"};
             AnswerOptionModel Answer1_Q2_L1 = new AnswerOptionModel { ID = 1, Answer = "Its effect was limited to Europe and the United States", IsCorrect = false };
             AnswerOptionModel Answer2_Q2_L1 = new AnswerOptionModel { ID = 2, Answer = "Dutch Artist Vincent Van Gogh was its leader", IsCorrect = false };
             AnswerOptionModel Answer3_Q2_L1 = new AnswerOptionModel { ID = 3, Answer = "The Nazi movement felt threatened by its ideals", IsCorrect = true };
@@ -41,7 +41,7 @@ namespace APIExperiment.Models
 			QuestionL1_Q2.Answers.Add(Answer4_Q2_L1);
          
 
-			QuestionModel QuestionL1_Q3 = new QuestionModel { ID = 3, Question = "What is Guerilla Girlz?"};
+			QuestionModel QuestionL1_Q3 = new QuestionModel { ID = 3, Question = "What is Guerrilla Girlz?", Image="L1Q3"};
             AnswerOptionModel Answer1_Q3_L1 = new AnswerOptionModel { ID = 1, Answer = "A British work of Art from the modernist period", IsCorrect = false };
             AnswerOptionModel Answer2_Q3_L1 = new AnswerOptionModel { ID = 2, Answer = "Gaugin's nickname for Polynesian women", IsCorrect = false };
             AnswerOptionModel Answer3_Q3_L1 = new AnswerOptionModel { ID = 3, Answer = "A Feminist congregation of artists that use art to denounce the patriachy", IsCorrect = true };
@@ -51,7 +51,7 @@ namespace APIExperiment.Models
             QuestionL1_Q3.Answers.Add(Answer3_Q3_L1);
             QuestionL1_Q3.Answers.Add(Answer4_Q3_L1);
 
-			QuestionModel QuestionL1_Q4 = new QuestionModel { ID = 4, Question = "Which of the following artists belonged to the Negritude movement?"};
+			QuestionModel QuestionL1_Q4 = new QuestionModel { ID = 4, Question = "Which of the following artists belonged to the Negritude movement?", Image="L1Q4"};
             AnswerOptionModel Answer1_Q4_L1 = new AnswerOptionModel { ID = 1, Answer = "Wassily Kandinsky", IsCorrect = false };
             AnswerOptionModel Answer2_Q4_L1 = new AnswerOptionModel { ID = 2, Answer = "Wifredo Lam", IsCorrect = true };
             AnswerOptionModel Answer3_Q4_L1 = new AnswerOptionModel { ID = 3, Answer = "Frida Kahlo", IsCorrect = false };

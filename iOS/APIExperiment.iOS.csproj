@@ -572,6 +572,9 @@
     <BundleResource Include="Resources\Check.png" />
     <BundleResource Include="Resources\X.png" />
     <BundleResource Include="Resources\Lev1Q1.png" />
+    <BundleResource Include="Resources\L1Q2.png" />
+    <BundleResource Include="Resources\L1Q3.png" />
+    <BundleResource Include="Resources\L1Q4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />

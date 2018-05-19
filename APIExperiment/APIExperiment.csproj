@@ -66,6 +66,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\GradeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -112,6 +116,10 @@
     </Compile>
     <Compile Include="ViewModels\Converters\AnswerToImage.cs" />
     <Compile Include="ViewModels\Converters\AnswerToEnabledConverter.cs" />
+    <Compile Include="ViewModels\Converters\IsSelectedToColorConverter.cs" />
+    <Compile Include="Views\GradeView.xaml.cs">
+      <DependentUpon>GradeView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

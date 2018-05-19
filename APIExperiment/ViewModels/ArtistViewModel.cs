@@ -270,6 +270,17 @@ namespace APIExperiment.ViewModels
 				OnPropertyChanged("IsCorrect");
 			}
 		}
+
+		private int _HowManyCorrect { get; set; } = 0;
+		public int HowManyCorrect
+		{
+			get { return _HowManyCorrect; }
+			set
+			{
+				_HowManyCorrect = value;
+				OnPropertyChanged("HowManyCorrect");
+			}
+		}
         
 
 		#endregion
@@ -307,8 +318,18 @@ namespace APIExperiment.ViewModels
 			CurrentQuestion = UnansweredQuestions.First();
 			Answers =new ObservableCollection<AnswerOptionModel>(CurrentQuestion.Answers);
 			CorrectAnswer = Answers.Where(x => x.IsCorrect == true).ToList().First();
+			HowManyCorrect = 0;
 
 			App.Current.MainPage = new TriviaQuestionView();
+		}
+
+
+		public ICommand SelectAnswerCommand { get; set; }
+		private void SelectAnswer(int id)
+		{
+
+			CurrentAnswer = Answers.Where(x => x.ID == id).First();
+            
 		}
 
 		public ICommand SubmitAnswerCommand { get; set; }
@@ -323,7 +344,28 @@ namespace APIExperiment.ViewModels
 			App.Current.MainPage = new TriviaFeedbackView();
 		}
 
-       
+
+
+		public ICommand NextQuestionCommand { get; set; }
+		private void NextQuestion()
+		{
+			if (IsCorrect)
+				HowManyCorrect++;
+
+			UnansweredQuestions.Remove(CurrentQuestion);
+			if (UnansweredQuestions.Count() > 0)
+			{
+				CurrentQuestion = UnansweredQuestions.First();
+				Answers = new ObservableCollection<AnswerOptionModel>((CurrentQuestion.Answers).ToList());
+				CorrectAnswer = Answers.Where(x => x.IsCorrect == true).ToList().First();
+
+				App.Current.MainPage = new TriviaQuestionView();
+			}
+			else
+				App.Current.MainPage = new GradeView();
+		}
+
+
 		#endregion 
 
 
@@ -427,6 +469,12 @@ namespace APIExperiment.ViewModels
 			App.Current.MainPage = new UserProfileView();         
         }
 
+		public ICommand GoToLevelsCommand { get; set; }
+		private void GoToLevels()
+		{
+			App.Current.MainPage = new LevelsView();
+		}
+
 
 		#endregion NAVIGATION COMMANDS
 
@@ -454,6 +502,9 @@ namespace APIExperiment.ViewModels
 			//GAME SECTION COMMANDS
 			TakeToTriviaQuestionCommand = new Command(TakeToTriviaQuestion);
 			SubmitAnswerCommand = new Command(SubmitAnswer);
+			NextQuestionCommand = new Command(NextQuestion);
+			SelectAnswerCommand = new Command<int>(SelectAnswer);
+			GoToLevelsCommand = new Command(GoToLevels);
 
 		}
 
