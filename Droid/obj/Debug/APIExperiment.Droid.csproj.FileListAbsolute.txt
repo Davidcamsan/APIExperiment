@@ -49,6 +49,7 @@
 /Users/carmen/Projects/APIExperiment/Droid/bin/Debug/Realm.xml
 /Users/carmen/Projects/APIExperiment/Droid/bin/Debug/Realm.Sync.pdb
 /Users/carmen/Projects/APIExperiment/Droid/bin/Debug/Realm.Sync.xml
+/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.csprojResolveAssemblyReference.cache
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.csproj.CoreCompileInputs.cache
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.dll
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.pdb
@@ -79,7 +80,6 @@
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/R.cs.flag
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/R.txt
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/uploadflags.txt
-/Users/carmen/Projects/APIExperiment/Droid/obj/Debug/APIExperiment.Droid.csprojResolveAssemblyReference.cache
 /Users/carmen/Projects/APIExperiment/Droid/bin/Debug/Mono.Android.pdb
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/linksrc/APIExperiment.Droid.pdb
 /Users/carmen/Projects/APIExperiment/Droid/obj/Debug/linksrc/APIExperiment.pdb
